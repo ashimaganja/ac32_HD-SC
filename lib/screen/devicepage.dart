@@ -13,10 +13,8 @@ class _DevicePageState extends State<DevicePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Row( //was row
       children: [
-        // Left Column with Drawer Button
-
         AnimatedContainer(
           duration: Duration(milliseconds: 300),
           width: showLeftColumn ? 300.0 : 50.0,  // 200 when expanded, 50 when collapsed
@@ -230,7 +228,7 @@ class _DevicePageState extends State<DevicePage> {
             ],
           ),
         ),
-      ],
+  ],
     );
   }
 }

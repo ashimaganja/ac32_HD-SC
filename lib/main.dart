@@ -1,13 +1,15 @@
 import 'dart:io';
 
-
+import 'package:window_size/window_size.dart';
 import 'package:ac32_hd_sc/screen/devicepage.dart';
 import 'package:flutter/material.dart';
 
 
 void main() {
   runApp(const MyApp());
+  setWindowMinSize(Size(1000, 1400));
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
