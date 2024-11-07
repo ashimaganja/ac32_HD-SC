@@ -1,6 +1,7 @@
 import 'dart:io';
 
 
+import 'package:ac32_hd_sc/screen/devicepage.dart';
 import 'package:flutter/material.dart';
 
 
@@ -171,17 +172,18 @@ class _MyHomePageState extends State<MyHomePage> {
                                         if(_formKey.currentState!.validate()){
                                           //Navigate the user to the home page
 
-                                          // if(emailController.text == "gmail" && passwordController.text == "catandmouse"){
-                                          //   Navigator.push(context,
-                                          //     MaterialPageRoute(builder:
-                                          //         (context) => HomePage(email:emailController.text,)
-                                          //     ),);
-                                          //
-                                          // } else{
-                                          //   ScaffoldMessenger.of(context).showSnackBar(
-                                          //       const SnackBar(content: Text('Invalid Credential'))
-                                          //   );
-                                          // }
+
+                                          if(emailController.text == "gmail" && passwordController.text == "password"){
+                                            Navigator.push(context,
+                                              MaterialPageRoute(builder:
+                                                  (context) => DevicePage()
+                                              ),);
+
+                                          } else{
+                                            ScaffoldMessenger.of(context).showSnackBar(
+                                                const SnackBar(content: Text('Invalid Credential'))
+                                            );
+                                          }
 
                                         }else{
                                           ScaffoldMessenger.of(context).showSnackBar(
