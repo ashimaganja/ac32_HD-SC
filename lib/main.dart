@@ -173,7 +173,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                           //Navigate the user to the home page
 
 
-                                          if(emailController.text == "gmail" && passwordController.text == "password"){
+                                          if(emailController.text == "password"
+                                              && passwordController.text == "password"){
                                             Navigator.push(context,
                                               MaterialPageRoute(builder:
                                                   (context) => DevicePage()
